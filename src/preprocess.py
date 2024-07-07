@@ -49,8 +49,8 @@ valitator_data = pd.DataFrame(output[:5000])
 trainer_data = pd.DataFrame(output[5000:])
 
 import pickle
-f = open('/content/drive/MyDrive/fasttext/valitator_data.pkl','wb')
-g = open('/content/drive/MyDrive/fasttext/trainer_data.pkl','wb')
+f = open('/content/drive/MyDrive/fasttext/validation_data.pkl','wb')
+g = open('/content/drive/MyDrive/fasttext/train_data.pkl','wb')
 pickle.dump(valitator_data,f)
 pickle.dump(trainer_data,g)
 f.close()
