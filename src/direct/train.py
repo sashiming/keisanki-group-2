@@ -22,7 +22,7 @@ class DirectTrainer:
         return X_train, Y_train, X_test, Y_test
 
     def dump_model(self):
-        pickle.dump(self.model, open("../../data/direct_model.pkl", "wb"))
+        pickle.dump(self.model, open("../../models/direct_model.pkl", "wb"))
 
     def generate_model(self):
         X_train, Y_train, X_test, Y_test = self.load_data()
@@ -42,4 +42,6 @@ class DirectTrainer:
 
 
 DirectTrainer().generate_model()
+
 # r2_score = 0.30488
+# ran on /src/direct
